@@ -58,5 +58,5 @@ typings/
 .env
 
 # nwb
-es/
-lib/
+/es/*
+/lib/*
