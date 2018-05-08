@@ -54,6 +54,7 @@ const HeroImage = styled.div`
 
   ${props => props.fillPage && css`
     background-size: cover;
+    height: 100vh;
   `}
 `
 
