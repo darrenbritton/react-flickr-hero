@@ -51,15 +51,19 @@ const HeroImage = styled.div`
     background-size: contain;
     image-rendering: -webkit-optimize-contrast;
   `}
+
+  ${props => props.fillPage && css`
+    background-size: cover;
+  `}
 `
 
 class Hero extends React.Component {
   render() {
     return (
       <HeroContainer overlay src={this.props.img} fillPage={this.props.fillPage} >
-        <HeroImage aspectRatio={this.props.aspectRatio} />
+        <HeroImage aspectRatio={this.props.aspectRatio} fillPage={this.props.fillPage} />
         <img src={this.props.img} />
-        <HeroImage aspectRatio={this.props.aspectRatio} thumbnail={this.props.thumbnail} />
+        <HeroImage aspectRatio={this.props.aspectRatio} thumbnail={this.props.thumbnail} fillPage={this.props.fillPage} />
       </HeroContainer>
     );
   }
