@@ -31,6 +31,7 @@ const HeroImage = styled.div`
   margin: 0;
   padding: 0;
   width: 100%;
+  background: #4966B1;
   padding-top: calc(100% * ${props => props.aspectRatio});
   filter: blur(30px);
   transform: scale(1.1);
