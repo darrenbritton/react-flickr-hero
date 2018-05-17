@@ -1,2 +1,3 @@
 # react-flickr-hero
-hero image component with flickr integration
+
+Hero image component with flickr integration. see the docs [site](https://darrenbritton.com/react-flickr-hero/) here for further details.
